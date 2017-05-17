@@ -3,9 +3,12 @@ package problem1;
 public class stampa {
 	
 	public static void main(String[] args) {
+		
+		Risultato();
+		
 		//TODO set limit to count che roba è?
 		
-		/*if(args.length<=0){
+		if(args.length<=0){
 			System.err.println("Set limit to count");
 			return ;
 		}
@@ -43,9 +46,8 @@ public class stampa {
 		logtime.getTime();
 		logtime.getDelta(LogTime.MILLI);
 		logtime.getDelta(LogTime.SECOND);
-		logtime.getDelta(LogTime.MINUTE);*/
+		logtime.getDelta(LogTime.MINUTE);
 		
-		Risultato();
 	}
 	
 	public static void Risultato() {
@@ -67,7 +69,7 @@ public class stampa {
 		ripetizione += mcm*i;
 	}
 
-		System.out.print(risultato - ripetizione);
+		System.out.println(risultato - ripetizione);
 	}
 }
 }
