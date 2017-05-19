@@ -54,39 +54,29 @@ public class stampa {
 		
 	int primoMultiplo = 3;
 	int secondoMultiplo = 5;
-	int mcm = primoMultiplo*secondoMultiplo;
 	int risultato = 0;
 	int risultato1 = 0;
 	int risultato2 = 0;
-	int ripetizione = 0;
-	int ripetizione1 = 0;
 	
 	{ for (int i = 1; i<=333; i++){ // 333 è il numero di volte che i multipli di 3 sono presenti sotto 1000
-		if (i<=199) // 199 è il numero di volte che i multipli di 5 sono presenti sotto 1000
-				risultato += secondoMultiplo*i + primoMultiplo*i ;
+		if (i<=199 && secondoMultiplo*i%primoMultiplo !=0) // 199 è il numero di volte che i multipli di 5 sono presenti sotto 1000
+				risultato += secondoMultiplo*i + primoMultiplo*i;
 		else
-				risultato += primoMultiplo*i ;
-			
+				risultato += primoMultiplo*i;
 		}
-	for (int i = 1; i<67; i++){
-		ripetizione += mcm*i;
-			}
-	int soluzione = risultato - ripetizione;
-		System.out.println("somma multipli di 3,5 minori di 1000: " + soluzione);
+	
+		System.out.println("somma multipli di 3,5 minori di 1000: " + risultato);
 		}
+	
 	{
 			for (int i = 1; i<=33; i++){ 
-				if (i<=19)
+				if (i<=19 && secondoMultiplo*i%primoMultiplo !=0)
 						risultato1 += secondoMultiplo*i + primoMultiplo*i ;
 				else
 						risultato1 += primoMultiplo*i ;
 					
 				}
-			for (int i = 1; i<7; i++){
-				ripetizione1 += mcm*i;
-					}
-			int soluzione = risultato1 - ripetizione1;
-				System.out.println("somma multipli di 3,5 minori di 100: " + soluzione);
+				System.out.println("somma multipli di 3,5 minori di 100: " + risultato1);
 		}
 	{
 		for (int i = 1; i<=3; i++){ 
