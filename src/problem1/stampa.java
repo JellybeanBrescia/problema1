@@ -6,7 +6,7 @@ public class stampa {
 		
 		Risultato();
 		
-		//TODO implementare timestamp
+		//TODO boo
 		
 		if(args.length<=0){
 			System.err.println("Set limit to count");
